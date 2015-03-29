@@ -1,0 +1,84 @@
+<section>
+	<section data-markdown>
+		## Booleanos
+	</section>
+
+	<section>
+		<h2>Booleanos: Declaración</h2>
+
+		<p>
+			Si \(x\) es una variable algebraica que varía en el conjunto \(\mathbb{B}\), para definir \(x\) se utiliza la expresión:
+			<br>
+			<br>
+			bool x;
+		</p>
+
+		<p class="fragment">
+			lo que sirve para declarar que la variable \(x\) pertenece al conjunto de los booleanos (\(\mathbb{B} = \{V, F\}\)) que son representables en un lenguaje de programación.
+		</p>
+	</section>
+
+	<section>
+		<h2>Booleanos: Conjunto</h2>
+
+		<p>
+			La representación interna de los valores booleanos se hace mediante el uso de valores enteros int de 32 bits de la siguiente manera: el valor lógico \(F\) se representa con el entero 0 (cero) y el valor lógico \(V\) se representa con cualquier entero distinto de 0, por costumbre se usa el entero 1 (uno). De lo anterior se obtienen las siguientes equivalencias lógicas:
+			$$ F \Leftrightarrow 0$$
+			y
+			$$V \Leftrightarrow \{x : (x \in \mathbb{Z}) \land (x \neq 0)\}$$
+		</p>
+	</section>
+
+	<section>
+		<h2>Booleanos: Literales</h2>
+
+		<table>
+			<thead>
+				<tr>
+					<th style="text-align:center">Lenguaje</th>
+					<th colspan="2" style="text-align:center">Literales booleanos</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style="text-align:center">
+						C++ <br> Python
+					</td>
+					<td style="text-align:center">
+						true <br> True
+					</td>
+					<td style="text-align:center">
+						false <br> False
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<p class="fragment">
+			<b>Literales booleanos</b>: Como sólo hay dos valores de verdad V y F, sólo hay dos literales para representar los valores lógicos.
+		</p>
+	</section>
+
+	<section data-markdown>
+		## Booleanos en C++: Recomendaciones
+		
+		En C++ cuando se declara una variable de tipo booleano, no se sabe que valor tiene, por eso es necesario inicializar la variable.
+
+```cpp
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+	bool top = true;
+	bool bottom = false;
+
+	bool black = 0;
+	bool white = 1;
+
+    return 0;
+}
+```
+	</section>
+</section>

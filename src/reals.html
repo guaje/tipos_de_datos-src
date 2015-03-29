@@ -1,0 +1,130 @@
+<section>
+	<section data-markdown>
+		## Reales
+	</section>
+
+	<section>
+		<h2>Reales: Declaración</h2>
+
+		<p>
+			Si \(x\) y \(y\) son variables algebraicas que varían en el conjunto \(\mathbb{R}\), para definir \(x\) y \(y\) se utilizan las expresiones:
+			<br>
+			<br>
+			float x;
+			<br>
+			double y;
+		</p>
+
+		<p class="fragment">
+			lo que sirve para declarar que las variables \(x\) y \(y\) pertenecen a los reales que son representables en un lenguaje de programación de tipado fuerte.
+		</p>
+	</section>
+
+	<section>
+		<h2>Reales: Conjunto</h2>
+
+		<p>
+			El subconjunto de los números reales que pueden ser representados en la mayoría de lenguajes de programación, es un subconjunto propio de los racionales, que se representan con 32 bits (4 bytes) (float) y 64 bits (8 bytes) (double) y que usan un tipo de codificación definida por el <i>IEEE standard for Binary Floating-Point Arithmetic 754 de 1985</i>, los valores distintos de 0 de este conjunto varían en el rango:
+			$$1.18 \times 10^{-38} \leq x \leq 3.40 \times 10^{38}$$
+			con precisión científica de 7 dígitos y
+			$$2.23 \times 10^{-308} \leq y \leq 1.79 \times 10^{308}$$
+			con precisión científica de 15 dígitos.
+		</p>
+	</section>
+
+	<section>
+		<h2>Reales: Densidad</h2>
+
+		<p>
+			$$\{ -6, -4, -3, -2, - \frac{3}{2}, -1, - \frac{3}{4}, - \frac{1}{2}, - \frac{3}{8}, - \frac{1}{4}, $$
+			$$0, $$
+			$$\frac{1}{4}, \frac{3}{8}, \frac{1}{2}, \frac{3}{4}, 1, \frac{3}{2}, 2, 3, 4, 6 \}$$
+		</p>
+	</section>
+
+	<section data-markdown>
+		<script type="text/template">
+		## Reales: Densidad
+
+		Los números reales son densos en ellos mismos, es decir, que dados dos reales distintos siempre se puede encontrar uno distinto que se encuentre entre ellos dos.
+
+		<!-- .element: class="fragment" -->
+		Los números reales de máquina no son densos, esto sucede por que los números reales de máquina son finitos y por lo tanto, existen números distintos para los cuales no hay números entre ellos. Además, la mayoría de los números se acumulan alrededor del 0 y hacia los extremos superior e inferior se encuentran más dispersos.
+		</script>
+	</section>
+
+	<section>
+		<h2>Reales: Literales</h2>
+
+		<table>
+			<thead>
+				<tr>
+					<th colspan="4" style="text-align:center">Literales reales</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style="text-align:right">
+						-3.14159265 <br> 3.14159265 <br> +3.14159265
+					</td>
+					<td style="text-align:right">
+						-0.0 <br> 0.0 <br> +0.0
+					</td>
+					<td style="text-align:right">
+						\(-6.02214129 \times 10^{23}\) <br> \(6.02214129 \times 10^{23}\) <br> \(+6.02214129 \times 10^{23}\)
+					</td>
+					<td style="text-align:right">
+						\(6.02214129 \times 10^{-23}\) <br> \(6.02214129 \times 10^{23}\) <br> \(6.02214129 \times 10^{+23}\)
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<p class="fragment">
+			<b>Literales reales</b>: Sintaxis de los valores que pueden ser asignados a las variables de tipo <b>float</b> o <b>double</b>.
+		</p>
+	</section>
+
+	<section>
+		<h2>Reales: Subtipos</h2>
+
+		<table>
+			<thead>
+				<tr>
+					<th style="text-align:center">Subtipo</th>
+					<th style="text-align:center">Bits</th>
+					<th style="text-align:center">Rango</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>long double</td>
+					<td>80</td>
+					<td>\(3.37 \times 10^{-4932} \leq y \leq 1.18 \times 10^{4932}\)</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+	<section data-markdown>
+		## Reales en C++: Recomendaciones
+		
+		En C++ cuando se declara una variable de tipo real (float o double), no se sabe que valor tiene, por eso es necesario inicializar la variable.
+
+```cpp
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+	float pi = 3.1416;
+	float aureo = 1.6180;
+	double e = 2.71828183;
+	double luz = 2.998e8;
+
+    return 0;
+}
+```
+	</section>
+</section>

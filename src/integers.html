@@ -1,0 +1,124 @@
+<section>
+	<section data-markdown>
+		## Enteros
+	</section>
+
+	<section>
+		<h2>Enteros: Declaración</h2>
+
+		<p>
+			Si \(x\) es una variable algebraica que varía en el conjunto \(\mathbb{Z}\), para definir \(x\) se utiliza la expresión:
+			<br>
+			<br>
+			int x;
+		</p>
+
+		<p class="fragment">
+			lo que sirve para declarar que la variable \(x\) pertenece a los enteros que son representables en un lenguaje de programación de tipado fuerte.
+		</p>
+	</section>
+
+	<section>
+		<h2>Enteros: Conjunto</h2>
+
+		<p>
+			El subconjunto de los números enteros que pueden ser representados en la mayoría de lenguajes de programación, es el conjunto de enteros con signo que se representan con 32 bits (4 bytes) y que usan un tipo de codificación interna llamada <b>complemento a 2</b>, los valores de este conjunto varían en el rango:
+			<br>
+			<br>
+			$$-2147483648 \leq x \leq 2147483647$$
+		</p>
+	</section>
+
+	<section>
+		<h2>Enteros: Literales</h2>
+
+		<table>
+			<thead>
+				<tr>
+					<th colspan="4" style="text-align:center">Literales enteros</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style="text-align:right">
+						-32768 <br> 32768 <br> +32768
+					</td>
+					<td style="text-align:right">
+						-0 <br> 0 <br> +0
+					</td>
+					<td style="text-align:right">
+						-1 <br> 1 <br> +1
+					</td>
+					<td style="text-align:right">
+						-127 <br> 127 <br> +127
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<p class="fragment">
+			<b>Literales enteros</b>: Sintaxis de los valores que pueden ser asignados a las variables de tipo <b>int</b>.
+		</p>
+	</section>
+
+	<section>
+		<h2>Enteros: Subtipos</h2>
+
+		<table>
+			<thead>
+				<tr>
+					<th style="text-align:center">Subtipo</th>
+					<th style="text-align:center">Bits</th>
+					<th style="text-align:center">Rango</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>short</td>
+					<td>16</td>
+					<td>\(-32768 \leq x \leq 32767\)</td>
+				</tr>
+				<tr class="fragment">
+					<td>long</td>
+					<td>32</td>
+					<td>\(-2147483648 \leq x \leq 2147483647\)</td>
+				</tr>
+				<tr class="fragment">
+					<td>unsigned int</td>
+					<td>32</td>
+					<td>\(0 \leq x \leq 4294967295\)</td>
+				</tr>
+				<tr class="fragment">
+					<td>unsigned short</td>
+					<td>16</td>
+					<td>\(0 \leq x \leq 65535\)</td>
+				</tr>
+				<tr class="fragment">
+					<td>unsigned long</td>
+					<td>32</td>
+					<td>\(0 \leq x \leq 4294967295\)</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+	<section data-markdown>
+		## Enteros en C++: Recomendaciones
+		
+		En C++ cuando se declara una variable de tipo entero, no se sabe que valor tiene, por eso es necesario inicializar la variable.
+
+```cpp
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+	int jackpot = 777;
+	int sentidoDeLaVidaElUniversoYTodoLoDemas = 42;
+
+    return 0;
+}
+```
+	</section>
+</section>

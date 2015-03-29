@@ -1,0 +1,131 @@
+<section>
+	<section data-markdown>
+		## Caracteres
+	</section>
+
+	<section>
+		<h2>Caracteres: Declaración</h2>
+
+		<p>
+			Si \(x\) es una variable algebraica que varía en el conjunto \(\mathbb{ASCII}\), para definir \(x\) se utiliza la expresión:
+			<br>
+			<br>
+			char x;
+		</p>
+
+		<p class="fragment">
+			lo que sirve para declarar que la variable \(x\) pertenece al conjunto de los \(\mathbb{ASCII}\).
+		</p>
+	</section>
+
+	<section>
+		<h2>Caracteres: Conjunto</h2>
+
+		<p>
+			Los caracteres representan los símbolos definidos por el ASCII (<i>American Standard Code for Information Interchange</i>). Los caracteres se representan con 8 bits (1 byte), lo que ofrece 256 símbolos distintos. El conjunto \(\mathbb{ASCII}\) cumple con la siguiente característica:
+		</p>
+	</section>
+
+	<section data-markdown>
+		## Caracteres: Conjunto
+
+		![Alt text](http://people.revoledu.com/kardi/resources/Converter/Image/ASCII.jpg)
+	</section>
+
+	<section>
+		<h2>Caracteres: Reservados</h2>
+
+		<table>
+			<thead>
+				<tr>
+					<th colspan="6" style="text-align:center">Caracteres especiales de C++</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style="text-align:center">\n</td>
+					<td style="text-align:center">Nueva línea</td>
+					<td style="text-align:center">\'</td>
+					<td style="text-align:center">Apóstrofo</td>
+					<td style="text-align:center">\v</td>
+					<td style="text-align:center">Tabulador vertical</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">\t</td>
+					<td style="text-align:center">Tabulador horizontal</td>
+					<td style="text-align:center">\"</td>
+					<td style="text-align:center">Comillas</td>
+					<td style="text-align:center">\r</td>
+					<td style="text-align:center">Retorno de carro</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">\\</td>
+					<td style="text-align:center">Backslash</td>
+					<td style="text-align:center">\b</td>
+					<td style="text-align:center">Retroceso</td>
+					<td style="text-align:center">\?</td>
+					<td style="text-align:center">Interrogación</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+	<section>
+		<h2>Caracteres: Reservados</h2>
+
+		<table>
+			<thead>
+				<tr>
+					<th colspan="4" style="text-align:center">Caracteres especiales de Python</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style="text-align:center">\n</td>
+					<td style="text-align:center">Nueva línea</td>
+					<td style="text-align:center">\"</td>
+					<td style="text-align:center">Comillas</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">\t</td>
+					<td style="text-align:center">Tabulador horizontal</td>
+					<td style="text-align:center">\b</td>
+					<td style="text-align:center">Retroceso</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">\\</td>
+					<td style="text-align:center">Backslash</td>
+					<td style="text-align:center">\v</td>
+					<td style="text-align:center">Tabulador vertical</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">\'</td>
+					<td style="text-align:center">Apóstrofo</td>
+					<td style="text-align:center">\r</td>
+					<td style="text-align:center">Retorno de carro</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+	<section data-markdown>
+		## Caracteres en C++: Recomendaciones
+		
+		En C++ cuando se declara una variable de tipo caracter, no se sabe que valor tiene, por eso es necesario inicializar la variable.
+
+```cpp
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+	char whitespace = ' ';
+	char cero = 48;
+	char endLine = '\n';
+
+    return 0;
+}
+```
+	</section>
+</section>
